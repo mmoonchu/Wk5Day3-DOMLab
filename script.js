@@ -37,13 +37,18 @@ document.querySelectorAll('.special-title').forEach(e => {
   // document.querySelector('#past-races').removeChild(document.querySelector('#past-races').children[3]);
   
   // Part 6
-  document.querySelector('#past-races').appendChild(document.createElement('li').textContent = 'NYC');
+ document.querySelector('#past-races').appendChild(document.createElement('li')).textContent = 'NYC';
 
   // Part 7
-
+  let newPost = document.querySelector('.main').appendChild(document.createElement('div'));
+  newPost.className += 'blog-post purple';
+  newPost.appendChild(document.createElement('h1')).textContent = 'NYC';
+  newPost.appendChild(document.createElement('p')).textContent = 'I ATE THE BIG APPLE!';
 
   // Part 8
-
+  document.querySelector('#quote-title').addEventListener('click', (e) => {
+    randomQuote();
+  })
 
   // Part 9
 
