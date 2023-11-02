@@ -17,22 +17,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
+document.querySelector('#main-title').innerText = 'DOM Toretto\'s homepage';
 
+// Part 2
+document.querySelector('body').style.backgroundColor = '#a4a4a4';
 
-  // Part 2
-
-
-  // Part 3
-
+// Part 3
+// console.log(document.querySelector('#favorite-things').removeChild(document.querySelector('#favorite-things').querySelector('li:last-child')));
+document.querySelector('#favorite-things').removeChild(document.querySelector('#favorite-things').lastElementChild);
 
   // Part 4
-
+document.querySelectorAll('.special-title').forEach(e => {
+  e.style.fontSize = '2rem';
+});
 
   // Part 5
-
-
+  document.querySelector('#past-races').removeChild(document.querySelector('#past-races').querySelector('li:nth-child(4)'));
+  // alt:
+  // document.querySelector('#past-races').removeChild(document.querySelector('#past-races').children[3]);
+  
   // Part 6
-
+  document.querySelector('#past-races').appendChild(document.createElement('li').textContent = 'NYC');
 
   // Part 7
 
@@ -41,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // Part 9
-
 
 
 
