@@ -51,7 +51,13 @@ document.querySelectorAll('.special-title').forEach(e => {
   })
 
   // Part 9
-
-
+document.querySelectorAll('.blog-post').forEach(e => {
+  e.addEventListener('mouseout', function() {
+    this.classList.toggle('red');
+  })
+  e.addEventListener('mouseenter', function() {
+    this.classList.toggle('red');
+  })
+});
 
 });
